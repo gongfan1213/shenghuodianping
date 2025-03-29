@@ -196,6 +196,9 @@ type Hotel struct {
 本节的源代码在Chapter16/model/hotel.go文件中。
 数据库中的hotel - Table（hotel表）如图16 - 1所示。
 
+![image](https://github.com/user-attachments/assets/b3c080f9-8d59-412d-b337-bfeed5370bbb)
+
+
 ![hotel表结构](此处因无法准确识别图片内容，无法完整描述，原书对应图16-1)
 注意：在hotel详情页中展示的团购信息、推荐菜品信息、评论的标签信息、评论信息、餐馆所在的商圈（商场）位置等，并不在hotel表中，而是通过程序调用其他接口得到的。
 上述hotel模块包含了与数据库相关的基本字段属性，以及一些聚合的属性。
@@ -414,6 +417,9 @@ func (h *PostTeamOrderHandler) TeamOrderHandler(c *gin.Context) {
 ```
 本节的源代码在/Chapter16/handler/dp.go文件中。
 当用户单击图16 - 2中的“提交订单”按钮时，就会执行上面的方法，生成订单。
+
+![image](https://github.com/user-attachments/assets/06c27f4e-35d3-4394-9de5-eedc42b2e607)
+
 
 ### 16.12 小结
 本章介绍了快速开发小程序的经验，采用了RESTful风格的API，使用Go语言及Gin框架进行项目开发、系统设计、数据库设计和快速迭代对接数据，突破了小程序与服务端交互的难题。可以感受到Go语言在系统中拥有快速开发，功能强大的优势，同时可以掌握架构设计与系统化开发思维，用尽可能小的代价实现尽可能大的需求，从后端服务器到前端UI，全面掌握Go语言的开发关键技能和Go语言编码的架构风格。
